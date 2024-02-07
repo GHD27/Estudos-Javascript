@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- general meta tags -->
+		<meta charset="utf-8" />
+		<meta name="author" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- site specific tags -->
+		<title>Fortune-Cookie</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+		<!-- style sheets -->
+		<link rel="stylesheet" href="css-reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		<!-- javascript files -->
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<!--Primeira tela da aplicacao-->
+			<div class="main">
+				<section id="first-screen">
+					<h2>Qual é a sua sorte de hoje?</h2>
+
+					<p>Abra o biscoito e descubra!</p>
+
+					<button id="fortune-cookie">
+						<img src="./assets/fortune-cookie.svg" />
+					</button>
+				</section>
+			</div>
+
+			<!--Segunda tela da aplicacao-->
+			<div class="main_2 hide">
+				<section id="second-screen">
+					<h2>Aqui está a sua sorte de hoje:</h2>
+
+					<div id="box">
+						<p id="fortune-message">Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
+					</div>
+
+					<img src="./assets/opened-cookie.svg" />
+					<button id="fortune-button">Abrir outro biscoito</button>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>

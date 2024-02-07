@@ -1,0 +1,90 @@
+/*Screen reader*/
+.sr-only {
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	overflow: hidden;
+
+	margin: -1px;
+	padding: 0px;
+	border: 0;
+	appearance: none;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+
+	display: grid;
+	height: 100vh;
+	place-content: center;
+}
+
+#app {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	gap: 19.2rem;
+}
+
+/*Classe simples para deixar coisas do meu aplicativo em flex*/
+.flex {
+	display: flex;
+}
+
+#main {
+	display: grid;
+	align-items: center;
+	align-content: center;
+}
+
+#timer {
+	font-size: 13.6rem;
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+#controls {
+	gap: 4rem;
+}
+
+button {
+	background-color: transparent;
+	border: 0;
+	color: var(--text-color);
+
+	cursor: pointer;
+
+	font-size: 5.6rem;
+}
+
+#aside {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 3.2rem;
+}
+
+.musicButton {
+	width: 13.8rem;
+	height: 15.2rem;
+	background-color: var(--card-blur-color);
+	border-radius: 3rem;
+	align-items: center;
+}
+
+.musicButton:hover {
+	color: var(--card-image-focus-color);
+	background-color: var(--card-focus-color);
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.on {
+	color: var(--card-image-focus-color);
+	background-color: var(--card-focus-color);
+}

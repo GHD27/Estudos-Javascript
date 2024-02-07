@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<!-- general meta tags -->
+		<meta charset="utf-8" />
+		<meta name="author" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- site specific tags -->
+		<meta name="description" content="Temporizador estilo pomodoro" />
+		<title>FocusTimer - Pomodoro</title>
+		<!-- style sheets -->
+		<link rel="stylesheet" href="css-reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		<!-- site icons -->
+		<script src="https://unpkg.com/@phosphor-icons/web"></script>
+		<link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+		<!-- javascript files -->
+		<script type="module" src="./src/main.js" defer></script>
+	</head>
+	<body>
+		<!-- div principal do meu aplicativo -->
+		<div id="app">
+			<div id="main">
+				<!-- timer -->
+				<section id="timer" class="flex">
+					<span id="minutes">25</span>
+					<span>:</span>
+					<span id="seconds">00</span>
+				</section>
+
+				<!-- Painel de controle com todos os botões -->
+				<section id="controls" class="flex">
+					<button data-action="toggleRunning" class="ph ph-play-circle" id="play">
+						<span class="sr-only">Iniciar contador</span>
+					</button>
+
+					<button data-action="toggleRunning" class="ph ph-pause-circle hide" id="pause">
+						<span class="sr-only">reiniciar contador</span>
+					</button>
+
+					<button data-action="reset" class="ph ph-stop-circle secondary">
+						<span class="sr-only">reiniciar contador</span>
+					</button>
+
+					<button data-action="plus" class="ph ph-plus-circle">
+						<span class="sr-only">Aumentar tempo</span>
+					</button>
+
+					<button data-action="minus" class="ph ph-minus-circle">
+						<span class="sr-only">Diminuir tempo</span>
+					</button>
+				</section>
+			</div>
+
+			<!--Botoes que controlam o audio-->
+			<div id="aside">
+				<button data-action="toggleForestMusic" class="ph ph-tree musicButton" id="forestButton">
+					<span class="sr-only">Musica de natureza</span>
+				</button>
+
+				<button data-action="toggleRainMusic" class="ph ph-cloud-rain musicButton" id="rainButton">
+					<span class="sr-only">Musica de chuva</span>
+				</button>
+
+				<button data-action="toggleStoreMusic" class="ph ph-storefront musicButton" id="storeButton">
+					<span class="sr-only">Musica de cafeteria</span>
+				</button>
+
+				<button data-action="toggleFireMusic" class="ph ph-fire-simple musicButton" id="fireButton">
+					<span class="sr-only">Musica de lareira</span>
+				</button>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+/*Documento padrão, resetando o CSS e setando o meu root*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+	/*Variáveis para serem utilizadas diversas vezes no meu projeto*/
+
+	--ff-primary: 'Poppins', sans-serif;
+	--text-color: #303030;
+	--primary-color: hsl(194, 100%, 63%);
+
+	font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+ul {
+	list-style: none;
+}
+html,
+body,
+input {
+	font-family: 'Mulish', sans-serif;
+	font-family: 'Dancing Script', cursive;
+	font-family: 'DM Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}

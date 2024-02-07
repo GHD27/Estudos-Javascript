@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<!-- general meta tags -->
+		<meta charset="utf-8" />
+		<meta name="author" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- site specific tags -->
+		<meta name="description" content="Temporizador estilo pomodoro" />
+		<title>FocusTimer - Pomodoro</title>
+		<!-- style sheets -->
+		<link rel="stylesheet" href="css-reset.css" />
+		<link rel="stylesheet" href="style.css" />
+    <!-- site icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+		<!-- javascript files -->
+    <script type="module" src="./src/main.js" defer></script>
+	</head>
+	<body>
+    <!-- div principal do meu aplicativo -->
+			<div id="app">
+        <!-- botão do light mode -->
+				<button id="toggle-mode">
+          <span class="sr-only">Ativar Light mode</span>
+          <i class="ph-bold ph-sun"></i>
+          <i class="ph-bold ph-moon"></i>
+				</button>
+
+        <!-- timer -->
+				<section id="timer" class="flex">
+					<span id="minutes">00</span>
+					<span>:</span>
+					<span id="seconds">00</span>
+				</section>
+
+        <!-- Painel de controle com todos os botões -->
+        <section id="controls" class="flex">
+          <button data-action="toggleRunning"
+           class="ph ph-play-circle">
+            <span class="sr-only">Iniciar contador</span>
+          </button>
+          <button data-action="toggleRunning" 
+          class="ph ph-pause-circle" >
+            <span class="sr-only">pausar contador</span>
+          </button>
+          <button data-action="set" 
+          class="ph ph-timer secondary">
+            <span class="sr-only">Ajustar contador</span>
+          </button>
+          <button data-action="reset" 
+          class="ph ph-stop-circle secondary">
+            <span class="sr-only">reiniciar contador</span>
+          </button>
+          <button data-action="toggleMusic" 
+          class="ph ph-speaker-none secondary">
+            <span class="sr-only">Iniciar Musica</span>
+          </button>
+          <button data-action="toggleMusic"
+           class="ph ph-speaker-high">
+            <span class="sr-only">Pausar Musica</span>
+          </button>
+        </section>
+	</body>
+</html>
